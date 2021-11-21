@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Music Player</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </head>
+
+
+  <body>
+                                    <!-- NavBar-->
+    <div class="p-3 mb-2 bg-secondary text-white ">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark ">
+      <div class="container-fluid">
+
+  <div id="musicimage" class="">
+
+
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+  <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+  <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+  <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+    </svg>
+</div>
+        <a id="logo"class="navbar-brand" href="#">Music Player</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+
+            <li class="nav-item">
+              <a id="label1"class="nav-link disabled">Home </a>
+            </li>
+            <li class="nav-item">
+              <a id="label2"class="nav-link disabled">By Genre </a>
+            </li>
+
+
+
+
+<!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Top Hits</a></li>
+                <li><a class="dropdown-item" href="#"> Most Played</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li> -->
+
+            <li class="nav-item">
+              <a id="label3"class="nav-link disabled">Top Hits </a>
+            </li>
+            <li class="nav-item">
+              <a id="label4"class="nav-link disabled">Most Played </a>
+            </li>
+
+            <li class="nav-item">
+              <a id="label5"class="nav-link disabled">Share Playlist </a>
+            </li>
+            <li class="nav-item">
+              <a id="label6"class="nav-link disabled">Billboard Charts 100 </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a id="label7"class="nav-link disabled"> Live Streams </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a id="label8"class="nav-link disabled"> Events Calendar </a>
+            </li>
+
+
+                        <li class="nav-item">
+                          <a id="label7"class="nav-link disabled"> Collaborate </a>
+                        </li>
+<button id="button1"type="button" class="btn btn-outline-warning">Create an Account</button>
+<button id="button2"type="button" class="btn btn-outline-warning">Login</button>
+          </ul>
+
+
+
+        </div>
+      </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+    </nav>
+
+
+
+                                        <!-- Carousel-->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img id="pictureone"src="Music_images/musicgraphics2.jpg" class=" d-block w-100" alt="...">
+          <div id="slidertext"class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p> We have the best tunes and the best selection! All in HD!.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="picturetwo"src="Music_images/jazz1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- Search Bar -->
+
+
+<div id="formblock" class="d-flex container">
+
+<form id="form1" class="d-flex w-50 ">
+  <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-warning" type="submit">Search</button>
+
+</form> </div>
+
+<div class="d-flex ">
+<button id="button3"type="button" class="btn btn-outline-warning">Upload your Music</button>
+</div>
+
+
+
+
+
+
+<!-- Card Body-->
+
+<div class="container">
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    <div class="col">
+
+      <div id="title" class="p-3 ">Rock</div>
+      <img id="image1" src="Music_images/rock.jpg" alt="">
+    </div>
+    <div class="col">
+      <div id="title" class="p-3">Oldies</div>
+      <img id="image1" src="Music_images/oldies.jpg" alt="">
+    </div>
+    <div class="col">
+      <div id="title" class="p-3 ">Jazz</div>
+      <img id="image1" src="Music_images/jazz.jpg" alt="">
+    </div>
+
+    <div class="col">
+      <div id="title" class="p-3">Country</div>
+      <img id="image1" src="Music_images/dolly.jpg" alt="">
+    </div>
+
+    <div class="col">
+      <div id="title" class="p-3">Instrumental</div>
+      <img id="image1" src="Music_images/instrumental.jpg" alt="">
+    </div>
+
+    <div class="col">
+      <div id="title" class="p-3">Latin</div>
+      <img id="image1" src="Music_images/pitbull.jpg" alt="">
+    </div>
+    <div class="col">
+      <div id="title" class="p-3 ">R&B</div>
+      <img id="image1" src="Music_images/r&b.jpg" alt="">
+    </div>
+    <div class="col">
+      <div id="title"class="p-3 ">Reggae</div>
+      <img id="image1" src="Music_images/reggae.jpg" alt="">
+    </div>
+    <div class="col">
+      <div id="title"class="p-3">Dance</div>
+      <img id="image1" src="Music_images/dance.jpg" alt="">
+    </div>
+    <div class="col">
+      <div id="title"class="p-3 ">Electronica</div>
+      <img id="image1" src="Music_images/electronic.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+   </div>
+ </div>
+
+
+
+<!-- Sub bar-->
+ <div class="card text-center">
+   <div class="card-header">
+
+   </div>
+   <div class="p-3 mb-2 bg-dark text-white card-body ">
+     <h5 class="card-title">Find your Flavor</h5>
+     <p class="card-text"> With our radio station playing the top hits, save what you like.</p>
+     <a href="#" class="btn btn-warning"> Our Radio Station </a>
+   </div>
+   <div class="card-footer text-muted">
+
+   </div>
+ </div>
+
+<!-- Footer-->
+
+ <div class="card text-center">
+   <div class="card-header">
+
+   </div>
+   <div class="p-3 mb-2 bg-secondary text-white  ">
+     <h5 class="card-title"></h5>
+     <p class="card-text"> Music Player Site. 2021. </p>
+
+   </div>
+
+
+
+ </div>
+
+
+
+ <script src="script.js"</script>
+
+
+
+
+
+  </body>
+</html>

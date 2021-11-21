@@ -1,0 +1,62 @@
+
+/*   This is the color on the box with the text for the slider  */
+#slidertext{
+
+  background-color: black;
+}
+
+
+#pictureone {
+  height: 600px
+
+}
+
+#musicimage {
+
+  padding-right: 10px;
+  color:yellow;
+}
+
+#logo {
+
+  font-family: Snell Roundhand,cursive;
+  font-weight: bold;
+}
+
+#picturetwo {
+  height: 600px
+
+}
+
+#button1
+{
+ margin-left: 100px;
+}
+#button2
+{
+ margin-left: 10px;
+}
+#form1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+margin-left: 325px;
+}
+
+#button3{
+margin-left: 650px;
+margin-bottom: 20px;
+}
+
+#or {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#image1{
+  height: 250px;
+  width: 250px;
+}
+#title {
+  margin-left: 75px;
+  font-weight: bold;
+}
