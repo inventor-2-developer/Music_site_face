@@ -1,15 +1,25 @@
 
 /*   This is the color on the box with the text for the slider  */
+
+
 #slidertext{
 
   background-color: black;
 }
 
 
+/*   Picture  for the slider  */
+
+
 #pictureone {
   height: 600px
 
 }
+
+
+
+/* Padding for the music icon   */
+
 
 #musicimage {
 
@@ -23,10 +33,17 @@
   font-weight: bold;
 }
 
+
+/*   Picture  for the slider  */
+
 #picturetwo {
   height: 600px
 
 }
+
+
+
+/*   Buttons and form margins  */
 
 #button1
 {
